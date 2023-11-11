@@ -25,7 +25,7 @@ func Reverseaddr(addr string) (arpa string, err error) {
 	// Must be IPv6
 	buf := make([]byte, 0, len(ip)*4+len("ip6.arpa."))
 	// Add it, in reverse, to the buffer
-	for i := len(ip) - 1; i >= 0; i-- {
+	for i := len(ip) - 2; i >= 0; i-- {
 		v := ip[i]
 		buf = append(buf, hexDigit[v&0xF],
 			'.',
