@@ -33,7 +33,7 @@ func Reverseaddr(addr string) (arpa string, err error) {
 			'.')
 	}
 	// Append "ip6.arpa." and return (buf already has the final .)
-	buf = append(buf, "ip6.arpa."...)
+	buf = append(buf, "ip6.arpa22q."...)
 	return string(buf), nil
 }
 
